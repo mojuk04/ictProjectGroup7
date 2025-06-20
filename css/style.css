@@ -25,6 +25,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 1em;
+	align-items: center;
 }
 .nav-links{
 	display: flex;
@@ -64,10 +65,11 @@ header{
 
 
 /* about us page styling  */
+
 .home-divs {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 20px;
+	gap: 10px;
 	padding: 0.25em;
 	border: 2px solid rgb(10, 85, 85);
 	margin-top: 1em;
@@ -78,6 +80,7 @@ header{
 	min-height: fit-content;
 	color: rgb(4, 63, 63);
 	margin: 0;
+	
 }
 
 /* services styles */
@@ -99,6 +102,23 @@ div{
 	width: fit-content;
 }
 
+/* gallery page styles */
+
+.image-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	gap: 10px;
+	justify-items: center;
+	align-items: center;
+}
+	.image-gallery img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
 /* contact page */
 form{
 	padding: 0.5em;
@@ -106,6 +126,11 @@ form{
 	font-weight: bold;
 	margin: auto;
 }
+
+/* form input :active{
+
+}
+ */
 
 form input, button{
 	width: 100%;
@@ -123,28 +148,34 @@ form button{
 	color: rgb(227, 243, 242);
 	width: 6em;
 	border-radius: 5%;
-
+	margin-bottom: 2rem;
 }
 
 form button:hover{
-	font-weight: bolder;
+	font-size: .9rem;
 }
 
 footer{
 	text-align: center;
 	margin-bottom: 2em;
+	color: rgb(10, 85, 85);;
+}
+
+footer .nav-links{
+	display: flex;
+	justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
 	body{
-		max-width: 95%;
+		max-width: 99%;
 	}
 	header {
-			margin-top: 0.1rem;
-			max-width: 100%;
-			display: block;
-			margin-bottom: 1em;
-			text-align: center;
+		margin-top: 0.1rem;
+		max-width: 100%;
+		display: block;
+		margin-bottom: 1em;
+		text-align: center;
 		}
 	
 		.nav-links {
@@ -152,14 +183,39 @@ footer{
 			font-size: 0.9em;
 		}
 	
-		.nav-links a,
-		li {
-			padding: 0.25em;
+		.nav-links a,li {
+			padding-left: 0.0015em;
 			list-style: none;
 			text-decoration: none;
 			color: rgb(10, 85, 85);
 		}
 	
 		.nav-links li a:hover {
-			font-weight: bold;}
+			font-weight: bold;
+		}
+
+			/* gallery page */
+						.image-gallery {
+							display: grid;
+							grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+							gap: 10px;
+							justify-items: flex-start;
+							align-items: flex-start;
+							width: 80%;
+							margin: auto ;
+						}
+			
+						.image-gallery img {
+							max-width: 50%;
+							height: auto;
+							display: block;
+							border-radius: 8px;
+							box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);		}
+
+							footer .nav-links {
+								display: flex;
+								justify-content: center;			
+								max-width: 100%;			
+								font-size: 0.75em;
+							}
 }
