@@ -12,6 +12,7 @@ const input3 = document.getElementById("email");
 // });
 
 function myalert() {
+  event.preventDefault()
   if (!input1.value || !input1.value || !input3.value) {
     alert("Fill out all fields");
   } else alert("Hey, thank you for signing up for push notifications");
