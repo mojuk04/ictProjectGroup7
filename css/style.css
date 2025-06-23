@@ -200,6 +200,12 @@ footer{
 		.nav-links {
 			margin-top: 1em;
 			font-size: 0.9em;
+			max-width: fit-content;
+			/* border: 1px solid green; */
+			display: flex;
+			padding: 0;
+			margin: auto;
+			margin-top: 1em;
 		}
 	
 		.nav-links a,li {
