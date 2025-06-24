@@ -73,6 +73,7 @@ header{
 	padding: 0.25em;
 	border: 2px solid rgb(10, 85, 85);
 	margin-top: 1em;
+	line-height: 3.5em;
 }
 
 .home{
@@ -186,7 +187,7 @@ footer{
 	}
 	
 	.home-divs div {
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	header {
